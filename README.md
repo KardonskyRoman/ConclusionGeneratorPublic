@@ -2,9 +2,16 @@
 
 ## Подготовка перед установкой:
 
+### Вручную:
 - Открыть файл expertiza-1.0-SNAPSHOT.jar архиватором, далее в BOOT-INF/classes/ открыть файл application-production.properties в блокноте и отредакатировать сткроку подключения к БД (spring.datasource.url=jdbc:mariadb://127.0.0.1:3306/expertiza?createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true)
   Вместо адреса 127.0.0.1 указать IP сервера, на котором установлена MySql. Если MySql установлена на том же сервере, указать текущий IP адрес. Здесь же, при необходимости, можно указать логин\пароль для доступа к бд.
 - Запаковать отредактированный файл обратно.
+
+### Через переменные окружения:
+- `PORT` - application port (default:80)
+- `DB_URL` - DB URL (default: 127.0.0.1)
+- `DB_USER` - DB User (default: root)
+- `DB_PASSWORD` - DB Password (default: root)
 
 ## Варианты установки
 
