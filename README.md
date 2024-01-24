@@ -12,6 +12,8 @@
 - `DB_URL` - DB URL (default: 127.0.0.1)
 - `DB_USER` - DB User (default: root)
 - `DB_PASSWORD` - DB Password (default: root)
+- `ENABLE_COMPRESSION` - сжатие данных между бекендом и  фронтендом (default: true)
+- `ENABLE_CACHE` - кэширование справочников (default: true)
 
 ## Варианты установки
 
